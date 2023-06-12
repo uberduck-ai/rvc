@@ -6,10 +6,10 @@ from torch.nn import Conv1d, ConvTranspose1d, Conv2d
 from torch.nn.utils import weight_norm, remove_weight_norm, spectral_norm
 import numpy as np
 
-from .commons import init_weights, get_padding
-from . import modules
-from . import attentions
-from . import commons
+from commons import init_weights, get_padding
+import modules
+import attentions
+import commons
 
 
 class TextEncoder256(nn.Module):
